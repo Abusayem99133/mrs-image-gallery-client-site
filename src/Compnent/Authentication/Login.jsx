@@ -51,9 +51,9 @@ const Login = () => {
       <Helmet>
         <title>Login - MRS Gallery</title>
       </Helmet>
-      <div className="md:flex w-full p-5 bg-cyan-700">
+      <div className="md:flex w-full p-5 bg-cyan-700 items-center">
         <div className="md:w-1/2">
-          <img src={""} alt="Sign In" />
+          <img src={""} alt="Login" />
         </div>
         <div className="md:w-1/2">
           <form onSubmit={handleLogin} className="card-body">
@@ -91,7 +91,7 @@ const Login = () => {
               </span>
             </div>
             <div className="form-control mt-6">
-              <button className="btn text-2xl bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 hover:shadow-xl hover:shadow-black text-white">
+              <button className="btn mt-6 text-2xl bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 hover:shadow-xl hover:shadow-black text-white">
                 Login
               </button>
             </div>

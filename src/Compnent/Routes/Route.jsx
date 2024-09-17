@@ -3,6 +3,7 @@ import Root from "./Root";
 import Home from "../HomePage/Home";
 import Login from "../Authentication/Login";
 import Register from "../Authentication/Register";
+import ProtectedRoute from "./ProtectedRoute";
 
 export const router = createBrowserRouter([
   {
@@ -12,7 +13,11 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: (
+          <ProtectedRoute>
+            <Home></Home>
+          </ProtectedRoute>
+        ),
       },
       { path: "/login", element: <Login /> },
       {

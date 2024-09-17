@@ -21,28 +21,28 @@ const Login = () => {
 
     signIn(email, password)
       .then((result) => {
-        toast.success("Successfully signed in!");
+        toast.success("Successfully Login!");
         if (result.user) {
           navigate(from, { replace: true });
         }
       })
       .catch((error) => {
-        console.error("Sign-in error:", error);
-        toast.error("Failed to sign in. Please check your credentials.");
+        console.error("Login error:", error);
+        toast.error("Failed to Login. Please check your credentials.");
       });
   };
 
   const handleSocialLogIn = (socialProvider) => {
     socialProvider()
       .then((result) => {
-        toast.success("Successfully signed in with social account!");
+        toast.success("Successfully Login with social account!");
         if (result.user) {
           navigate(from, { replace: true });
         }
       })
       .catch((error) => {
         console.error("Social login error:", error);
-        toast.error("Failed to sign in with social account.");
+        toast.error("Failed to Login with social account.");
       });
   };
 

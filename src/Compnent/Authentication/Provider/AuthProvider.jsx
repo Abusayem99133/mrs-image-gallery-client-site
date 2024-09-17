@@ -19,7 +19,7 @@ const AuthProvider = ({ children }) => {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
-  const updateUSerProfile = (name, photo) => {
+  const updateUserProfile = (name, photo) => {
     return updateProfile(auth.currentUser, {
       displayName: name,
       photoURL: photo,
@@ -40,7 +40,7 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
-      setLoading(true);
+      setLoading(false);
     });
     return () => {
       return unsubscribe();
@@ -50,7 +50,7 @@ const AuthProvider = ({ children }) => {
     user,
     loading,
     createUser,
-    updateUSerProfile,
+    updateUserProfile,
     signIn,
     logOut,
     googleLogin,

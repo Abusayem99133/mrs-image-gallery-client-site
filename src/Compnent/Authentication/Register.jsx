@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { useContext, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-// import regis from "../../../assets/depositphotos_9125976-stock-photo-register-now.jpg";
+import regis from "../../assets/SignUp image/7677.jpg_wh860.jpg";
 import { AuthContext } from "./Provider/AuthProvider";
 
 const Register = () => {
@@ -50,7 +50,7 @@ const Register = () => {
       </Helmet>
       <div className="md:flex w-full p-5 bg-cyan-700 items-center">
         <div className="md:w-1/2">
-          <img src={""} alt="Register Now" />
+          <img src={regis} alt="Register Now" />
         </div>
         <div className="md:w-1/2">
           <form onSubmit={handleRegister} className="card-body">

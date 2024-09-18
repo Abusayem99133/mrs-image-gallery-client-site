@@ -1,5 +1,5 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-// import img from "../../assets/signIn Image/360_F_386510351_03Qk3je4FGnVLo4vXRdOpoDWfZjtmajd.jpg";
+import img from "../../assets/signIn Image/enter-login-and-password-registration-page-on-screen-sign-in-to-your-account-creative-metaphor-login-page-mobile-app-with-user-page-flat-illustration-ve.jpg";
 import { FcGoogle } from "react-icons/fc";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useContext, useState } from "react";
@@ -53,7 +53,7 @@ const Login = () => {
       </Helmet>
       <div className="md:flex w-full p-5 bg-cyan-700 items-center">
         <div className="md:w-1/2">
-          <img src={""} alt="Login" />
+          <img src={img} alt="Login" />
         </div>
         <div className="md:w-1/2">
           <form onSubmit={handleLogin} className="card-body">
